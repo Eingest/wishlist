@@ -1,8 +1,8 @@
 <li class="d-flex justify-content-between">
     <div class="form-check">
         <label class="form-check-label" [ngClass]="cssClasses">
-            <input class="checkbox" type="checkbox" [checked]="fulfilled" (click)="toggleFulfilled()">
-            {{wishText}}
+            <input class="checkbox" type="checkbox" [checked]="wish.isComplete" (click)="toggleFulfilled()">
+            {{wish.wishText}}
         </label>
     </div>
     <div>
